@@ -4,7 +4,7 @@ const path = require('path')
 
 async function getNodeMinimumEngine () {
   const engines = await mingine() // mingine returns a promise
-  const outputPath = path.join(__dirname, '/node-minimum-output.json')
+  const outputPath = path.join(__dirname, '/everything-output.json')
 
   fs.writeFile(outputPath, engines ? JSON.stringify(engines, null, 2) : undefined, function (error) { // will write the minimum usable version of node.js if there were any `engines` that included `node`, otherwise it'll return undefined
     if (error) throw error
