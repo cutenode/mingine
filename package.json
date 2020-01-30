@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/cutenode/mingine/issues"
   },
-  "homepage": "https://github.com/cutenode/mingine#readme"
+  "homepage": "https://github.com/cutenode/mingine#readme",
+  "engines": {
+    "node": "^13 || ^12 || ^11 || ^10"
+  }
 }
