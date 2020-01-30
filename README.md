@@ -36,6 +36,6 @@ The general structure will be:
       - `${package}` string - strings that represent the package names of packages that included `${version}` as the value for `${engineName}` in their package.json. Examples: `webpack`, `react`, `qs`, `request`
   - `minimum` string - a string that includes the _minimum usable version_ of `${engineName}` given the context collected from the `engines` property of all package.json files within `node_modules`.
 
-  An example of JSON output can be found at [./examples/node-minimum-output.json][]
+  An example of JSON output can be found at [./examples/everything-output.json][]
 
-  [./examples/node-minimum-output.json]:./examples/node-minimum-output.json
+  [./examples/everything-output.json]:./examples/everything-output.json
