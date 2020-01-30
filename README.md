@@ -24,7 +24,16 @@ async function getNodeMinimumEngine () {
 getNodeMinimumEngine()
 ```
 
-## API
+## `mingine(options)`
+
+* `options` object (optional) - An object that acts as a courrier of options to [Arborist][]. Currently, only `path` is actively used.
+  * `path` string (optional) - where to search for node_modules. defaults to the current working directory.
+
+Returns `promise` - a promise that resolves an object, which represents the strucutre of engines. See [Returned Object Structure][] for more context on the shape of this object.
+
+Calling `mingine()` by itself will return a promise that resolves an object. It searches the current working directory's `node_modules` to do so. Calling `mingine(options)` where `options` is an object and has the property `path`, the value of `path` will be used as the directory to search for `node_modules`.
+
+## Returned Object Structure
 
 The _structure_ of mingine's API is consistent, but the properties will not be. Mingine collects the `engine` property from every package inside of `node_modules` and then dynamically builds an object that includes every property within `engines` it encountered. It makes no assurances that any given property will exist since there's no gaurantee that a property may exist within `node_modules`.
 
@@ -39,4 +48,4 @@ The general structure will be:
   An example of JSON output can be found at [./examples/everything-output.json][]
 
   [./examples/everything-output.json]:./examples/everything-output.json
-  
+  [Arborist]:https://www.npmjs.com/package/@npmcli/arborist
