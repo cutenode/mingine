@@ -1,6 +1,6 @@
 {
   "name": "mingine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node.js module to understand your dependencies `engines`.",
   "main": "index.js",
   "scripts": {
