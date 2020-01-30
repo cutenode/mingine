@@ -1,0 +1,19 @@
+{
+  "name": "mingine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tierney Cyren <hello@bnb.im>",
+  "license": "MIT",
+  "dependencies": {
+    "@npmcli/arborist": "0.0.0-pre.2",
+    "semver": "^7.1.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  }
+}
