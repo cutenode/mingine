@@ -7,10 +7,10 @@ A Node.js module to understand your dependencies `engines`.
 First, you'll need to install mingine:
 
 ```sh
-npm i migine
+npm i mingine
 ```
 
-Next, you'll want to require and use migine. Requring mingine returns a promise that resolves an object.
+Next, you'll want to require and use mingine. Requring mingine returns a promise that resolves an object.
 
 ```js
 const mingine = require('mingine')
